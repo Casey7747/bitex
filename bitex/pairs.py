@@ -344,6 +344,20 @@ class XRPUSDFormatter(PairFormatter):
         """Initialize the Formatter instance."""
         super(XRPUSDFormatter, self).__init__('XRP', 'USD')
 
+class OMGUSDFormatter(PairFormatter):
+    """OMGUSD Pairformatter."""
+
+    def __init__(self):
+        """Initialize the Formatter instance."""
+        super(OMGUSDFormatter, self).__init__('OMG', 'USD')
+
+class SANUSDFormatter(PairFormatter):
+    """SANUSD Pairformatter."""
+
+    def __init__(self):
+        """Initialize the Formatter instance."""
+        super(SANUSDFormatter, self).__init__('SAN', 'USD')        
+        
 
 BTCUSD = BTCUSDFormatter()
 ETHUSD = ETHUSDFormatter()
@@ -353,6 +367,8 @@ ZECUSD = ZECUSDFormatter()
 DASHUSD = DASHUSDFormatter()
 BCHUSD = BCHUSDFormatter()
 XRPUSD = XRPUSDFormatter()
+SANUSD = SANUSDFormatter()
+OMGUSD = OMGUSDFormatter()
 
 ETHBTC = ETHBTCFormatter()
 LTCBTC = LTCBTCFormatter()
